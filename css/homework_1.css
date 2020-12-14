@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 顶部红色区域 */
+#top{
+    position: relative;
+    background-color: rgb(212, 60, 51);
+    padding: 0 10px;
+    width: 100%;
+    height: 84px;
+}
+.top_text{
+    position: absolute;
+    width: 142px;
+    height: 25px;
+    color: white;
+    /* 竖直方向上居中 */
+    top:50%;
+    transform: translateY(-50%);
+}
+#threetabs{
+    display: flex;
+}
+.tabtitle{
+    margin-top: 10px;
+    flex: 1;
+    
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+.middle{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.middle::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    width: 2px;
+    height: 16px;
+    background-color: #d33a31;
+}
+.musicblock{
+    position: relative;
+    padding-bottom: 24px;
+}
+.li:first-child {
+    padding-left: 0;
+    padding-right: 2px;
+}
+
+.li {
+    
+    margin-bottom: 16px;
+    float: left;
+    width: 33.3%;
+    padding-left: 1px;
+    padding-right: 1px;
+    box-sizing: border-box;
+}
+ .img {
+    position: relative;
+    padding-bottom: 100%;
+}
+ .text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 6px 2px 0 6px;
+    min-height: 30px;
+    line-height: 1.2;
+    font-size: 13px;
+}
+.img>.u-img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.u-img {
+    width: 100%;
+    vertical-align: middle;
+}
+.lnum {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    z-index: 3;
+    padding-left: 13px;
+    color: #fff;
+    font-size: 12px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: 11px 10px;
+    text-shadow: 1px 0 0 rgba(0,0,0,.15);
+}
+.m-homeremd .remd_tl {
+    position: relative;
+    padding-left: 9px;
+    margin-bottom: 14px;
+    font-size: 17px;
+    height: 20px;
+    line-height: 20px;
+}
+.m-homeremd .remd_tl:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    width: 2px;
+    height: 16px;
+    background-color: #d33a31;
+}
+
+.title{
+    font-size: 17px;
+
+}
+
+.bottom{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.bottom::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    width: 2px;
+    height: 16px;
+    background-color: #d33a31;
+}
+.title{
+    font-size: 17px;
+    color: black;
+}
+.singer{
+    font-size: 12px;
+    color: #888888;
+}
+hr{
+    background-color: #88888838;
+    height: 1px;
+    border: 0;
+}

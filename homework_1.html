@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework_1</title>
+    <link rel="stylesheet">
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="./css/homework_1.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- 顶部红色区域 -->
+        <div id="top">
+
+            <span class="top_text">{{top_text}}</span>
+        </div>
+        <!-- 水平三个tab -->
+        <div style="width: 100%;" id="threetabs">
+            <div class="tabtitle">{{tabtitle[0]}}</div>
+            <div class="tabtitle">{{tabtitle[1]}}</div>
+            <div class="tabtitle">{{tabtitle[2]}}</div>
+        </div>
+        <hr>
+        <!-- 推荐歌单 -->
+        <div class="middle">
+            <p>&nbsp;&nbsp;{{middle_top_text}}</p>
+        </div>
+        <!-- 推荐的歌曲 -->
+        <div class="musicblock">
+            <!-- 歌曲 -->
+            <div class="songs">
+                <div class="ul">
+                    <!-- 每个歌曲封面 -->
+                    <!-- 第一排第一个 -->
+                    <a class="li">
+                        <div class="img">
+                            <!-- 图片 -->
+                            <img class="u-img"
+                                v-bind:src="img">
+                                 <!-- 播放量 -->                                               
+                                <span class="u-earp lnum">{{num[0]}}</span>
+                        </div>
+                        <p class="text">{{text[0]}}</p>
+                    </a>
+                    <!-- 第一排第二个 -->
+                    <a class="li">
+                        <div class="img">
+                            <img class="u-img"
+                                v-bind:src="img">
+                            <span class="u-earp lnum">{{num[0]}}</span>
+                        </div>
+                        <p class="text">{{text[1]}}</p>
+                    </a>
+                    <!-- 第一排第三个 -->
+                    <a class="li">
+                        <div class="img">
+                            <img class="u-img"
+                                v-bind:src="img">
+                            <span class="u-earp lnum">{{num[2]}}</span>
+                        </div>
+                        <p class="text">{{text[2]}}</p>
+                    </a>
+                    <!-- 第二排第一个 -->
+                    <a class="li">
+                        <div class="img">
+                            <img class="u-img"
+                                v-bind:src="img">
+                            <span class="u-earp lnum">{{num[3]}}</span>
+                        </div>
+                        <p class="text">{{text[3]}}</p>
+                    </a>
+                    <!-- 第二排第二个 -->
+                    <a class="li">
+                        <div class="img">
+                            <img class="u-img"
+                                v-bind:src="img">
+                            <span class="u-earp lnum">{{num[4]}}</span>
+                        </div>
+                        <p class="text">{{text[4]}}</p>
+                    </a>
+                    <!-- 第二排三个 -->
+                    <a class="li">
+                        <div class="img">
+                            <img class="u-img"
+                                v-bind:src="img">
+                            <span class="u-earp lnum">{{num[5]}}</span>
+                        </div>
+                        <p class="text">{{text[5]}}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 最新歌曲 -->
+        <div class="newsongs">
+            <p class="bottom">{{text2}}</p>
+            <!-- 第一首推荐歌曲 -->
+            <div class="songs">
+                <!-- 歌曲标题 -->
+                <div class="title">{{song_title[0]}}</div>
+                <!-- 歌手 -->
+                <div class="singer">{{singer}}</div><hr>
+            </div>
+            <div class="songs">
+                <div class="title">{{song_title[2]}}</div>
+                <div class="singer">{{singer}}</div><hr>
+            </div>
+            <div class="songs">
+                <div class="title">{{song_title[1]}}</div>
+                <div class="singer">{{singer}}</div><hr>
+            </div>
+            <div class="songs">
+                <div class="title">{{song_title[3]}}</div>
+                <div class="singer">{{singer}}</div><hr>
+            </div>
+            <div class="songs">
+                <div class="title">{{song_title[4]}}</div>
+                <div class="singer">{{singer}}</div><hr>
+            </div>
+            <div class="songs">
+                <div class="title">{{song_title[5]}}</div>
+                <div class="singer">{{singer}}</div><hr>
+            </div>
+            <div class="songs">
+                <div class="title">{{song_title[6]}}</div>
+                <div class="singer">{{singer}}</div><hr>
+            </div>
+            <div class="songs">
+                <div class="title">{{song_title[7]}}</div>
+                <div class="singer">{{singer}}</div><hr>
+            </div>
+            <div class="songs">
+                <div class="title">{{song_title[8]}}</div>
+                <div class="singer">{{singer}}</div><hr>
+            </div>
+            <div class="songs">
+                <div class="title">{{song_title[9]}}</div>
+                <div class="singer">{{singer}}</div><hr>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/homework_1.js"></script>
+</body>
+
+</html>
