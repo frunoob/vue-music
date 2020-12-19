@@ -22,7 +22,7 @@
 #threetabs{
     display: flex;
 }
-.tabtitle{
+.tabsong_title{
     margin-top: 10px;
     flex: 1;
     
@@ -121,7 +121,7 @@
     background-color: #d33a31;
 }
 
-.title{
+.song_title{
     font-size: 17px;
 
 }
@@ -142,7 +142,7 @@
     height: 16px;
     background-color: #d33a31;
 }
-.title{
+.song_title{
     font-size: 17px;
     color: black;
 }
